@@ -1,0 +1,382 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<style>
+    .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+
+  
+}
+
+    
+
+   /*Color de la barra superior */
+.bg-light {
+    background-image: linear-gradient(to bottom,  #14b014, #11e32d);
+}
+ 
+/* Estilo para la paginación */
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: green;
+    border-color: green;
+}
+
+.pagination .page-link {
+    color: green;
+    border-radius: 50%; /* Redondea los botones */
+}
+.custom-border
+{
+    border-color: green;
+}
+
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: ;
+    --bs-btn-hover-border-color: green;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: green;
+    --bs-btn-active-border-color: green;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: green;
+    --bs-btn-disabled-border-color: green;
+}
+</style>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Coffee's UTP</title>
+    <!-- Favicon-->
+    <link rel="icon" href="green coffee.png" type="image/x-icon">
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <b><a class="nav-item nav-link active" href="#">Inicio<span class="sr-only"></span></a></b>
+      <b><a class="nav-item nav-link" href="Cuenta.html">Cuenta</a></b>
+     
+         <!-- Categorias-->
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Categorias
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="Comida.html">Comida</a></li>
+          <li><a class="dropdown-item" href="Bebidas.html">Bebidas</a></li>
+          <li><a class="dropdown-item" href="Galletas.html">Galletas</a></li>
+        </ul>
+      </div>
+    
+    </div>
+  </div>
+  <form class="d-flex">
+    <a href="Carrito.html" class="btn btn-outline-dark">
+        <i class="bi-cart-fill me-1"></i>
+        Carrito
+        <span class="badge bg-dark text-white ms-1 rounded-pill">2</span>
+    </a>
+    </form>
+</nav>
+    <!-- Incluye los scripts de Bootstrap (jQuery y Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    
+         
+         
+                    
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    
+    <header class="bg-dark py-5">
+        <div class="logo">
+              <center><img src="Logo gray 2.png" alt="logo" style="max-width: 150px; max-height: 450px;"></center>
+            </a>
+          </div>
+          <h1 class="display-4 fw-bolder">Bienvenido!</h1>
+          <p class="lead fw-normal text-white-50 mb-0">Ordena, disfruta y repite: ¡Facil y rapido!</p>
+        </p>
+            </div>
+        </div>
+    </header>
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="doblada.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Doblada</h5>
+                                <!-- Product price-->
+                                $20.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="coca-cola.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Coca Cola</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                </div>
+                                <!-- Product price-->
+                                <span>$15.00</span>
+                                
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="dona.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Dona</h5>
+                                <!-- Product price-->
+                                $15.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="s">Añadir al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="Arizona.jpeg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Arizona</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                   
+                                </div>
+                                <!-- Precio del producto-->
+                                $18.00
+                            </div>
+                        </div>
+                        <!-- Acciones del producto-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="Nito.jpeg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Nito</h5>
+                                <!-- Product price-->
+                                $18.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="amper.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Amper</h5>
+                                <!-- Product price-->
+                                $20.00 
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="G. emperador.jpeg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Galletas Emperador</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                  
+                                </div>
+                                <!-- Product price-->
+                                $18.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        
+                <!-- Product image-->
+                <img class="card-img-top" src="Sandwich.jpeg" alt="..." />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Sandwich</h5>
+                        <!-- Product reviews-->
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+
+                        </div>
+                        <!-- Product price-->
+                        $25.00
+                    </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section> 
+<section class="py-5">
+<div class="container px-4 px-lg-5 mt-5">
+    <!-- ... (productos actuales) ... -->
+
+    <!-- Paginación -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href=".html"><i class="fas fa-angle-double-left"></i></a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="Productos2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>       
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <b><div class="container"><p class="m-0 text-center text-white">Coffee's UTP - 2023</b></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src=""></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <div id="scroll-to-top" class="scroll-to-top">
+       <i class="bi-arrow-up-short"></i>
+       
+    </div>
+    
+    <script>
+        // Agregar evento clic a las opciones de categoría
+        const categoryOptions = document.querySelectorAll('.category-option');
+        categoryOptions.forEach(option => {
+            option.addEventListener('click', function(event) {
+                event.preventDefault();
+                const category = this.getAttribute('data-category');
+                console.log(`Mostrar productos de la categoría: ${category}`);
+                // Aquí puedes implementar la lógica para mostrar los productos de la categoría seleccionada
+            });
+        });
+    </script>
+    <script>
+        // Mostrar u ocultar el botón al hacer scroll
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scroll-to-top").style.display = "block";
+            } else {
+                document.getElementById("scroll-to-top").style.display = "none";
+            }
+        };
+    
+        // Volver arriba al hacer clic en el botón
+        document.getElementById("scroll-to-top").addEventListener("click", function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+
+        
+    </script>
+</body>
+</html>

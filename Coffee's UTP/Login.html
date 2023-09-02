@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  
+  <link rel="icon" href="green coffee.png" type="image/x-icon">
+  <link rel="shortcut icon" href="Coffee's utp (2).png" type="image/x-icon">
+  
+
+  <style>
+    body {
+      background-image: url("png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-color: rgb(5, 124, 5);
+      color: black;
+      font-weight: bold;
+      font-family: "Posterama", cursive;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    form {
+      text-align: left;
+      background-color:  transparent;
+      padding: 20px;
+      padding: 20px;
+      border-radius: 40px;
+      margin-top: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      padding: 5px 30px; 
+      border-radius: 20px; 
+      border: none;
+      width: 80%;
+      margin-bottom: 20px;
+      font-size: 16px;
+      background-position: center right; 
+      background-repeat: no-repeat; 
+      background-size: 20px;
+      font-family: "posterama", cursive;
+    }
+    
+    input[type="text"] {
+      padding-right: 40px; 
+    }
+    
+    input[type="password"] {
+      padding-right: 40px; 
+    }
+    
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder {
+      color: transparent; 
+    }
+    
+    input[type="text"]:focus::placeholder,
+    input[type="password"]:focus::placeholder {
+      color: #ccc; 
+    }
+    
+    input[type="submit"] {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: "posterama", cursive;
+      margin: 0 auto; 
+      display: block;
+      background-image: url('button_background.png');
+      background-size: contain;
+    }
+    
+    a {
+      color: white; 
+      text-decoration: none;
+    }
+    
+    h1 {
+      font-family: "Lucida Handwriting", cursive;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 20px;
+      color: white; 
+    }
+    
+    .icon-container {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+    }
+    
+    .icon {
+      align-items: center;
+      width: 300px;
+      height: 300px;
+    }
+    
+    .word-matricula {
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      font-family: "posterama", cursive;
+    }
+    
+    .word-contrasena {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: "posterama", cursive;
+      color: white;
+    }
+    
+    .word-iniciar {
+      color: white;
+      text-decoration: underline;
+    }
+    
+    .word-registrate {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: "posterama", cursive;
+      color: white;
+    }
+    
+  </style>
+</head>
+<body>
+  <form id="loginForm">
+    <h1 style= <span class="icon-container"><img class="icon" src="icon 1.png" alt="Icon"></span></h1>
+    <label for="username"><span class="word-matricula">Matrícula:</span></label>
+    <input type="text" id="username" name="username" style="background-image: url('identity-card.png');" placeholder="Ingresa tu matrícula">
+    <label for="password"><span class="word-contrasena">Contraseña:</span></label>
+    <input type="password" id="password" name="password" pattern="\d{4}" title="La contraseña debe ser de 4 dígitos numéricos." required style="background-image: url('lock.png');" placeholder="Ingresa tu contraseña">
+    <input type="submit" value="Iniciar sesión">
+    <p><span class="word-registrate">¿No tienes una cuenta?</span> <a href="Registro.html">Regístrate aqui</a></p>
+  </form>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginForm = document.getElementById('loginForm');
+
+      loginForm.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        const passwordInput = document.getElementById('password');
+        const password = passwordInput.value;
+
+        
+      });
+    });
+  </script>
+</body>
+</html>
